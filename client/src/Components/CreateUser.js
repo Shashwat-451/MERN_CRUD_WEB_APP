@@ -19,37 +19,6 @@ const CreateUser = (props) => {
     .catch(err=>console.log(err))
   }
 
-  // or
-
-  // const Submit = (e) => {
-  //   e.preventDefault();
-  
-  //   const url = 'http://localhost:3001/createUser';
-  //   const dataToSend = {
-  //     name,
-  //     email,
-  //     age,
-  //   };
-  
-  //   const requestOptions = {
-  //     method: 'POST', // HTTP method for the request
-  //     headers: {
-  //       'Content-Type': 'application/json', // Specifying the data format (JSON in this case)
-  //     },
-  //     body: JSON.stringify(dataToSend), // Convert data to JSON format before sending
-  //   };
-  
-  //   fetch(url, requestOptions)
-  //     .then(response => response.json())
-  //     .then(result => {
-  //       // Handle the response from the server
-  //       console.log(result);
-  //     })
-  //     .catch(error => {
-  //       // Handle any errors that occurred during the request
-  //       console.error('Error:', error);
-  //     });
-  // };
 
   
   return(

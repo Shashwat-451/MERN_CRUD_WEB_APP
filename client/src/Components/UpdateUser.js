@@ -5,9 +5,11 @@ import { useEffect } from "react";
 const UpdateUser = (props) => {
 
   const{id}=useParams();
+  
   const[name,setName]=useState('');
   const[email,setEmail]=useState('');
   const[age,setAge]=useState('');
+
   const navigate=useNavigate();
 
   useEffect(()=>{

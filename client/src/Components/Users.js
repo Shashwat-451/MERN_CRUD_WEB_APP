@@ -4,7 +4,7 @@ import {useState} from 'react';
 import { Link } from "react-router-dom";
 const Users = (props) => {
 
-    const [users,setUsers]=useState();
+    const [users,setUsers]=useState([]);
 
     useEffect(()=>{
       axios.get('http://localhost:3001')
@@ -34,7 +34,7 @@ const Users = (props) => {
                 </thead>
                 <tbody>
                       {
-                        users?.map((user)=>{
+                            users.map((user)=>{
                            return <tr>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
